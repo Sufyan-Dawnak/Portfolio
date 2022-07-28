@@ -431,7 +431,7 @@ i h3
     margin-right: 0.5vw;
 }
 
-@media screen and (width: 667px) {
+@media screen and (min-width: 667px) {
     nav
     {
         width: 94.5%;
@@ -440,6 +440,25 @@ i h3
     .lnav
     {
         height: 100%;
+    }
+    .no
+    {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 415px) {
+    .no
+    {
+        display: block;
+        font-size: 5vw;
+        font-family: "Cairo";
+        padding-top:70%;
+        text-align: center;
+    }
+    nav,.lnav,.card,.card1,.card2,.footer,.about
+    {
+        display: none;
     }
 }
 

@@ -1,0 +1,435 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quantico&display=swap');
+
+*
+{
+    padding: 0%;
+    margin: 0%;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+nav
+{
+    position: sticky;
+    top: 0;
+    width: 95%;
+    margin-left: 5%;
+    height: 3.1vw;
+    background-color: white;
+    padding: 1px;
+    font-family: 'Cairo',cursive;
+    z-index: 1;
+ /* background-image: linear-gradient(rgb(188, 190, 192),rgb(251, 251, 252)); */
+}
+
+nav img
+{
+    width: 3vw;
+    height: 3vw;
+    margin-left: 17%;
+    margin-top: 1vw;
+    border-radius: 100%;
+}
+
+nav li
+{
+    display: block;
+    text-decoration: none;
+    float: right;
+    text-align: center;
+    width: 10%;
+    font-size: 1.5vw;
+    margin-left: 1px;
+    margin-right: 1px;
+    margin-bottom: 5px;
+    padding: 0.3vw;
+    cursor: pointer;
+}
+
+nav a
+{
+    color: black;
+}
+
+li:hover
+{
+    transition: 0.5s;
+    color: grey;
+    opacity: 0.9;
+}
+
+.lnav
+{
+    position: fixed;
+    top: 0%;
+    width: 4.9%;
+    height: 49vw;
+    padding: 1px;
+    margin-left: 0%;
+    font-family: 'Cairo',cursive;
+    float: left;
+    background-color: black;
+ /* background-image: linear-gradient(rgb(188, 190, 192),rgb(251, 251, 252)); */
+}
+
+.lnav a
+{
+    color: white;
+}
+
+.lnav i
+{
+    font-size: 3vw;
+    margin-left: 17%;
+    margin-top: 2vw;
+}
+
+.lnav i:hover
+{
+    transition-duration: 0.5s;
+    transform: translateY(-7px);
+    color: #07e1ae;
+}
+
+.card
+{
+    width: 95%;
+    margin-left: 5%;
+    height: 46vw;
+    z-index:-1;
+    background-image: url(img/background.jpg);
+    background-size: cover;
+    animation: slide 1s;
+}
+
+.about
+{
+    width: 95%;
+    margin-left: 5%;
+    height: 35vw;
+    font-family: "cairo";
+}
+
+.about .content
+{
+    padding: 3vw;
+    margin: 3vw;
+}
+
+.content img
+{
+    float: left;
+    width: 20%;
+    height: 17vw;
+    margin-top: 2vw;
+    border-radius: 100%;
+    border: black solid 2px;
+    margin-right:5%;
+    /* box-shadow: rgb(92, 91, 91) 5px 5px 5px 5px; */
+}
+
+.about h2
+{
+    font-size: 3vw;
+    text-align: center;
+}
+
+.about p
+{
+    margin-top: 1vw;
+    font-size: 1.7vw;
+}
+
+
+.card img
+{
+    width: 23vw;
+    height: 29vw;
+    float: right;
+    margin: 3vw;
+}
+
+.card .info
+{
+    
+    float: left;
+    margin: 3vw;
+    width: 50vw;
+    height: 29vw;
+    padding: 5px;
+}
+
+.info .name
+{
+    font-size: 2.7vw;
+    font-family:'Mochiy Pop One' ;
+}
+
+.info .title
+{
+    font-size: 2vw;
+    font-family:'Cairo', cursive ;
+}
+
+.info .profile
+{
+    margin-top: 15vw;
+    font-size: 1.7vw;
+    font-family:'Cairo' ;
+}
+
+.card1
+{
+    width: 95%;
+    margin-left: 5%;
+    height: 60vw;
+    background-color: whitesmoke;
+    z-index:-1;
+    background-image: url(img/screen.jfif);
+    background-size:cover;
+}
+
+.pcard
+{
+    position: relative;
+    width: 56.5vw;
+    height: 34vw;
+    top: 10vw;
+    left: 25vw;
+    font-family: 'Cairo';
+    font-size: 2vw;
+    text-align: center;
+    padding: 5px;
+}
+
+.pcard .container
+{
+    width: 100%;
+    height: 29vw;
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(1,1fr);
+    overflow: scroll;
+}
+
+.pcard button
+{
+    width: 3vw;
+    height: 3vw;
+    font-size: 2vw;
+    float: right;
+    margin-right: 0.5vw;
+    border-radius: 100%;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+
+.msg
+{
+    position: absolute;
+    right: 1vw;
+    margin-top: -1vw;
+    width: 5vw;
+    font-size: 1vw;
+    width: 11vw;
+    display: none;
+    background-color: white;
+    color: black;
+}
+
+button:hover + .msg {
+    transition-delay: 1s;
+    display: block;
+  }
+
+a
+{
+    text-decoration: none;
+}
+
+.cards
+{
+    width: 47vw;
+    height: 23vw;
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px black;
+    margin: 2vw;
+}
+
+.dark-mode {
+    background-color: rgb(59, 58, 58);
+    color: white;
+}
+
+.dark-mode-card {
+    background-color: black;
+    color: white;
+    box-shadow: 5px 5px 15px white;
+}
+
+.cards:hover
+{
+    transition-duration: 1s;
+    transform: scale(1.05);  
+}
+
+.cards img
+{
+    float: left;
+    margin-top: 2vw;
+    margin-left: 2vw;
+    width: 23%;
+    height: 10vw;
+    border-radius: 100%;
+    border: 1px solid black;
+}
+
+.cards h4
+{
+    position: relative;
+    text-align: left;
+    margin-top: 3vw;
+    margin-left: 1vw;
+    font-size: 1.5vw;
+    float: left;
+    width: 60%;
+    font-family: 'Quantico', sans-serif;
+}
+
+.cards p
+{
+    position: relative;
+    font-size: 1.3vw;
+    font-family: 'Quantico', sans-serif;
+    margin-left: 1vw;
+    margin-top: 1vw;
+    width: 60%;
+    float: left;
+    text-align: left;
+}
+
+.card2
+{
+    width: 95%;
+    margin-left:5%;
+    height: 23vw;
+    background-color: whitesmoke;
+}
+
+.card2 h1
+{
+    font-family: 'Cairo';
+    font-size: 3vw;
+    text-align: center;
+}
+
+.card2 i
+{
+    font-size: 7vw;
+    margin: 5vw;
+}
+
+i h3
+{
+    margin-top: 15%;
+    font-size: 1.5vw;
+    float: center;
+}
+
+
+@keyframes movein {
+    0%
+    {
+        transform: translateX(450px) scale(0);
+        opacity: 0;
+    }
+    50%
+    {
+        transform: translateX(0) scale(1);
+        opacity: 1;   
+    }
+    100%
+    {
+        transform: translateX(-450px) scale(0);
+        opacity: 0;
+    }
+}
+
+@keyframes slide {
+    0%
+    {
+        transform: translateY(150px);
+        opacity: 0; 
+    }
+    100%
+    {
+        transform: translateY(0);
+        opacity: 1; 
+    }
+}
+
+.reveal{
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+  
+.reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+.footer
+{
+    width: 95%;
+    margin-left:5% ;
+    height: 25vw;
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(3,1fr);
+
+}
+
+.footer .fcard
+{
+    width: 80%;
+    height: 20vw;
+    margin: 2vw;
+    padding: 1vw;
+    border-radius: 30px;
+}
+
+.fcard h4
+{
+    font-family: "Cairo";
+    font-size: 2vw;
+}
+
+.fcard p
+{
+    font-family: "Cairo";
+    font-size: 1.5vw;
+    margin-top: 2vw;
+}
+
+.fcard a
+{
+    font-family: "Cairo";
+    font-size: 1.5vw;
+}
+
+.fcard i 
+{
+    margin-right: 0.5vw;
+}
+
+
+

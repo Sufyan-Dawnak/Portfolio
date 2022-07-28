@@ -431,5 +431,15 @@ i h3
     margin-right: 0.5vw;
 }
 
-
+@media screen and (width: 667px) {
+    nav
+    {
+        width: 94.5%;
+        float: right;
+    }
+    .lnav
+    {
+        height: 100%;
+    }
+}
 

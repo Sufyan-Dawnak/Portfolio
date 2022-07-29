@@ -431,23 +431,12 @@ i h3
     margin-right: 0.5vw;
 }
 
-@media screen and (min-width: 667px) {
-    nav
-    {
-        width: 94.5%;
-        float: right;
-    }
-    .lnav
-    {
-        height: 100%;
-    }
-    .no
-    {
-        display: none;
-    }
+.no
+{
+   display: none;
 }
 
-@media screen and (max-width: 415px) {
+@media screen and (orientation:portrait) {
     .no
     {
         display: block;
